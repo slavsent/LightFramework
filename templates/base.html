@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>{% block title %}{% endblock %}</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  {% block style %}{% endblock %}
+</head>
+
+<body>
+  <div id="main">
+    <div id="header">
+      <div id="logo">
+        <div id="logo_text">
+          <!-- class="logo_colour", allows you to change the colour of the text -->
+          <h1><a href="/">Салон - <span class="logo_colour">лучшие машины тут</span></a></h1>
+          <h2>Продажа машин. От леговых до грузовыхю</h2>
+        </div>
+      </div>
+      {% block top_menu %}
+      {% endblock %}
+    </div>
+    {% block content %}
+    {% endblock %}
+    {% block footer %}
+    {% endblock %}
+  </div>
+</body>
+</html>
